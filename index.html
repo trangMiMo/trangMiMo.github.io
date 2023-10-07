@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <meta charset="UTF-8" />
-    <title>Pizza</title>
+    <title>Summer rolls and co</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="./w3.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
     <style>
         @font-face {
             font-family: "Comic Neue";
@@ -25,11 +27,19 @@
             overflow-x: scroll;
             font-size: 32px;
         }
+        .email-button {
+            margin-top: -32px;
+        }
         .menu-section {
             padding-top: calc(20vh + 52px) !important;
         }
         .menu-padding {
             padding: 8px 16px;
+        }
+        @media (min-width: 601px) {
+            .email-button {
+                margin-top: -8px;
+            }
         }
 
         @media (min-width: 993px) {
@@ -50,7 +60,7 @@
         <div id="home" class="">
             <!-- Navbar (Sits on top) -->
             <div
-                class="w3-top w3-bar w3-xlarge w3-black w3-opacity-min w3 w3-border-bottom w3-border-red"
+                class="w3-top w3-bar w3-xlarge w3-teal w3-opacity-min w3 w3-border-bottom w3-border-red"
             >
                 <a href="#home" class="w3-bar-item w3-button">HOME</a>
                 <a href="#menu" class="w3-bar-item w3-button">MENU</a>
@@ -85,7 +95,7 @@
                     MENU
                 </h1>
                 <div
-                    class="w3-row w3-center w3-border w3-border-dark-grey sticky-menu w3-black w3-opacity-min"
+                    class="w3-row w3-center w3-border w3-border-dark-grey sticky-menu w3-teal w3-opacity-min"
                 >
                     <a href="#starters">
                         <div class="w3-col s12 m6 l2 menu-padding w3-hover-red">
@@ -109,28 +119,37 @@
                     </a>
                 </div>
                 <div id="starters" class="menu-section">
-                    <h1 class="w3-center w3-jumbo w3-padding-32 w3-black">
+                    <h1 class="w3-center w3-jumbo w3-padding-32 w3-teal">
                         STARTERS
                     </h1>
                 </div>
                 <div class="w3-container w3-padding-32">
                     <h1>
-                        <b>Summer rolls</b>
+                        <b>Nem Cuon - Summer roll</b>
                         <span class="w3-right">5,50 €</span>
                     </h1>
-                    <p class="w3-text-grey">Five summer rolls</p>
+                    <p class="w3-text-grey">
+                        Five summer rolls filled with salad, cucumber and beef
+                    </p>
+                    <hr />
+                    <h1>
+                        <b>Goi du du - Papaya Salat</b>
+                        <span class="w3-right">3,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">With fish sauce</p>
                     <hr />
                     <h1>
                         <b>Dumpling</b>
                         <span class="w3-right w3-text-red">
                             <div>7,50 €</div>
                             <div
-                                class="w3-right w3-text-light-green w3-tag w3-red w3-large"
+                                class="w3-right w3-xlarge w3-text-green w3-tag w3-pale-red w3-large"
                             >
                                 New
                             </div>
                         </span>
                     </h1>
+                    <!-- For the new tag-->
                     <br />
                     <hr />
                     <h1>
@@ -140,25 +159,81 @@
                     <p class="w3-text-grey">With shrimps</p>
                 </div>
                 <div id="main-dishes" class="menu-section">
-                    <h1 class="w3-center w3-jumbo w3-black w3-padding-32">
+                    <h1 class="w3-center w3-jumbo w3-teal w3-padding-32">
                         MAIN DISHES
                     </h1>
                 </div>
 
                 <div class="w3-container w3-padding-32">
                     <h1>
-                        <b>Pho</b>
+                        <b>Pho bo</b>
                         <span class="w3-right">8,50 €</span>
                     </h1>
+                    <p class="w3-text-grey">Pho with beef</p>
                     <hr />
                     <h1>
-                        <b>Curry</b>
+                        <b>Pho ca</b>
+                        <span class="w3-right">8,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">Pho with fish</p>
+                    <hr />
+                    <h1>
+                        <b>Pho Hanoi</b>
+                        <span class="w3-right">12,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">
+                        Special Pho from Hanoi. Spiced with cinnamon
+                    </p>
+                    <hr />
+                    <h1>
+                        <b>Curry Chicken</b>
+                        <span class="w3-right">10,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">Red Curry with chicken</p>
+                    <hr />
+                    <h1>
+                        <b>Curry Beef</b>
+                        <span class="w3-right">10,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">Red Curry with beef</p>
+                    <hr />
+                    <h1>
+                        <b>Curry Duck</b>
+                        <span class="w3-right">10,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">Red Curry with duck</p>
+                    <hr />
+                    <h1>
+                        <b>Curry Tofu</b>
                         <span class="w3-right">9,50 €</span>
                     </h1>
+                    <p class="w3-text-grey">Red Curry with tofu</p>
+                    <hr />
+                    <h1>
+                        <b>Bun Nem</b>
+                        <span class="w3-right">12,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">Rice noodles with spring rolls</p>
+                    <hr />
+                    <h1>
+                        <b>Crispy Chicken - classic</b>
+                        <span class="w3-right">10,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">
+                        Crispy chicken with curry, rice and vegetables
+                    </p>
+                    <hr />
+                    <h1>
+                        <b>Crispy Chicken - cocos</b>
+                        <span class="w3-right">11,50 €</span>
+                    </h1>
+                    <p class="w3-text-grey">
+                        Crispy chicken with cocos-curry, rice and vegetables
+                    </p>
                 </div>
 
                 <div id="desserts" class="menu-section">
-                    <h1 class="w3-center w3-jumbo w3-black w3-padding-32">
+                    <h1 class="w3-center w3-jumbo w3-teal w3-padding-32">
                         DESSERTS
                     </h1>
                 </div>
@@ -166,7 +241,6 @@
                 <div class="w3-container w3-padding-32">
                     <h1>
                         <b>Grilled banana</b>
-                        >
                         <span class="w3-right">9,50 €</span>
                     </h1>
                     <hr />
@@ -182,7 +256,7 @@
                 </div>
 
                 <div id="drinks" class="menu-section">
-                    <h1 class="w3-center w3-jumbo w3-black w3-padding-32">
+                    <h1 class="w3-center w3-jumbo w3-teal w3-padding-32">
                         DRINKS
                     </h1>
                 </div>
@@ -202,12 +276,27 @@
                         <b>Orange juice</b>
                         <span class="w3-right">2,50 €</span>
                     </h1>
+                    <hr />
+                    <h1>
+                        <b>Apple juice</b>
+                        <span class="w3-right">2,50 €</span>
+                    </h1>
+                    <hr />
+                    <h1>
+                        <b>Lychee juice</b>
+                        <span class="w3-right">2,50 €</span>
+                    </h1>
+                    <hr />
+                    <h1>
+                        <b>Champagner</b>
+                        <span class="w3-right">8,50 €</span>
+                    </h1>
                 </div>
 
                 <!-- About -->
                 <div
                     id="about"
-                    class="w3-container w3-red w3-grayscale w3-xlarge w3-padding-64"
+                    class="w3-container w3-orange w3-grayscale w3-xlarge w3-padding-64"
                 >
                     <h1 class="w3-center w3-jumbo">About</h1>
                     <p>
@@ -237,43 +326,73 @@
                 <h1 class="w3-center w3-jumbo">Contact</h1>
                 <p>
                     Find us at Fantasy avenue 5 at New Village or call us at
-                    05050515-122330
+                    <!-- drama number -->
+                    <a href="tel:+493023125000">+493023125000 </a>
                 </p>
                 <p class="w3-xxlarge">
-                    <b>Reserve</b> a table, ask for today's special or just send
+                    <b>Reserve</b> a table or ask for today's special, just send
                     us a message:
                 </p>
                 <form
                     action="mailto:contact@example.com"
                     target="_blank"
                     method="get"
+                    class="w3-row"
                 >
-                    <p>
-                        <input
-                            class="w3-input w3-padding-16 w3-border"
-                            type="text"
-                            placeholder="Topic"
-                            required
-                            name="subject"
-                        />
-                    </p>
-                    <p>
-                        <textarea
-                            class="w3-input w3-padding-16 w3-border"
-                            type="text"
-                            placeholder="Message"
-                            required
-                            name="body"
-                        ></textarea>
-                    </p>
-                    <p>
+                    <div class="w3-col s12 m6">
+                        <p>
+                            <input
+                                class="w3-input w3-padding-16 w3-border"
+                                type="text"
+                                placeholder="Topic"
+                                required
+                                name="subject"
+                            />
+                        </p>
+                        <p>
+                            <textarea
+                                class="w3-input w3-padding-16 w3-border"
+                                type="text"
+                                placeholder="Message"
+                                required
+                                name="body"
+                            ></textarea>
+                        </p>
+                    </div>
+                    <div class="w3-padding w3-row w3-col s12 m6">
                         <button
-                            class="w3-button w3-light-grey w3-block"
+                            class="w3-button w3-blue w3-round-large email-button"
                             type="submit"
                         >
-                            SEND MESSAGE
+                            <i class="fa-regular fa-envelope"></i>
                         </button>
-                    </p>
+                        <a
+                            class="w3-button w3-blue w3-round-large"
+                            href="tel:+493023125000"
+                        >
+                            <!-- drama number -->
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a
+                            class="w3-button w3-blue w3-round-large"
+                            href="https://facebook.com/"
+                        >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a
+                            class="w3-button w3-blue w3-round-large"
+                            href="https://www.instagram.com/"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a
+                            class="w3-button w3-blue w3-round-large"
+                            href="https://www.tiktok.com"
+                        >
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <br />
                 </form>
             </div>
 
